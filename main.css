@@ -5,49 +5,53 @@ body{
 #nav{
     background-image: url(../images/lapi.jpg);
     opacity: 20%;
-    margin: 20px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(5px, auto);
     grid-template-areas: 
-    "nav . . a w c";
+    "nav . . a w c"
+    
 }
 #nav .logo{
-    background-image: url(../images/logo.png);
-    position: fixed ;
-    padding: 20px;
-    margin: 30px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-image: url(images/logo.jpg);
+    padding: 10px; 
     grid-area: nav;
    
 }
 .about{
-    
+    color: blue;
+    padding: 50px;
     text-decoration: none;
     grid-area: a;
 }
 .work{
+    color: blue;
+    padding: 50px;
     text-decoration: none;
     grid-area: w;
 }
 .contact{
-    
+    color: blue;
+    padding: 50px;
     text-decoration: none;
     grid-area: c;
 }
 #about{
-    
+    background: yellow;
     color: rgba(3, 87, 241, 0.712);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(90px, auto);
     grid-template-areas: 
     "abt abt abt abt abt abt"
     "image image image . . ."
     "image image image h1 h1 ."
     "image image image h4 h4 ."
-    "image image image p p ."
-    ". . . . . .";
+    "image image image p p p"
+    "image image image btjoin btjoin btjoin ";
 }
 #about .abt{
     grid-area: abt;
@@ -56,8 +60,9 @@ body{
 }
 #about .image{
     background-image: url(../images/mee.jpg);
-    width: 100%;
-    height: 100%;
+    
+    width: 90%;
+    height: 90%;
     grid-area: image;
 }
 #about h1{
@@ -70,10 +75,68 @@ body{
 #about .bt{
     grid-area: p;
 }
+#about .btjoin{
+    grid-area: btjoin
+}
+#work h1{
+    color: blue;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding: 10px;
+}
+#contact{
+    background-image: url(Images/lapi.jpg);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgba(3, 87, 241, 0.712);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1"
+    "p p p . . ."
+    "git link . tweet . insta";
+}
+#contact h1{
+    color: black;
+    grid-area: h1;
+    font-weight: bolder;
+}
+#contact p{
+    color: black;
+    font-weight: bolder;
+    grid-area: p
+}
+#contact .github{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(images/githublogo.png);
+    padding: 20px; 
+    grid-area: git;
 
-
-
-
+}
+#contact .linkedin{
+   background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(images/linkedin-logo.png);
+    padding: 20px; 
+    grid-area: link;
+}
+#contact .twitter{
+    background-repeat: no-repeat;
+     background-size: 100%;
+     background-image: url(images/twitter-social-logotype.png);
+     padding: 20px; 
+     grid-area: tweet;
+ }
+ #contact .instagram{
+    background-repeat: no-repeat;
+     background-size: 100%;
+     background-image: url(images/instagram-social-network-logo-of-photo-camera.png);
+     padding: 20px; 
+     grid-area: insta;
+ }
 
 
 
