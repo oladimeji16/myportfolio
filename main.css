@@ -1,0 +1,102 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+#nav{
+    background-image: url(../images/lapi.jpg);
+    opacity: 20%;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "nav . . a w c";
+}
+#nav .logo{
+    background-image: url(../images/logo.png);
+    position: fixed ;
+    padding: 20px;
+    margin: 30px;
+    grid-area: nav;
+   
+}
+.about{
+    
+    text-decoration: none;
+    grid-area: a;
+}
+.work{
+    text-decoration: none;
+    grid-area: w;
+}
+.contact{
+    
+    text-decoration: none;
+    grid-area: c;
+}
+#about{
+    
+    color: rgba(3, 87, 241, 0.712);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "abt abt abt abt abt abt"
+    "image image image . . ."
+    "image image image h1 h1 ."
+    "image image image h4 h4 ."
+    "image image image p p ."
+    ". . . . . .";
+}
+#about .abt{
+    grid-area: abt;
+    font-weight: bolder;
+    font-size: 2em;
+}
+#about .image{
+    background-image: url(../images/mee.jpg);
+    width: 100%;
+    height: 100%;
+    grid-area: image;
+}
+#about h1{
+    grid-area: h1;
+    font-weight: bolder;
+}
+#about h4{
+    grid-area: h4;
+}
+#about .bt{
+    grid-area: p;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
