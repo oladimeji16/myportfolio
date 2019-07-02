@@ -1,0 +1,96 @@
+body{
+    font-family: 'inconsolata';
+    text-align: center;
+}
+
+#nav{
+    position: sticky;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(75px, auto);
+    grid-template-areas: 
+    "nav . . a w c"
+}
+#nav .logo{
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-image: url(../Images/MODEV.jpg);
+    padding: 20px; 
+    grid-area: nav;
+}
+#nav .about{
+    border-radius: 20px;
+    color: yellow;
+    text-decoration: none;
+    grid-area: a;
+}
+#nav .work{
+    border-radius: 20px;
+    color: yellow;
+    text-decoration: none;
+    grid-area: w;
+}
+#nav .contact{
+    color: yellow;
+    text-decoration: none;
+    grid-area: c;
+
+}
+#work h1{
+    color: yellow;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding: 10px;
+}
+#contact{
+    
+    background-color: yellow;
+    background-repeat: space;
+    background-size: 100%;
+    color: rgba(3, 87, 241, 0.712);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+    "h1 h1 h1 h1  "
+    "p p p p"
+    "git link tweet insta"
+    ". . . .";
+}
+#contact h1{
+    color: black;
+    grid-area: h1;
+    font-weight: bolder;
+}
+#contact p{
+    color: black;
+    font-weight: bolder;
+    grid-area: p
+}
+#contact .github{
+    width: 5px;
+    height: 10px;
+    grid-area: git;
+    padding: 10px; 
+
+}
+#contact .linkedin{
+    width: 5px;
+    height: 5px;
+    grid-area: link;
+    padding: 5px; 
+}
+#contact .twitter{
+    width: 5px;
+    height: 10px;
+    padding: 10px; 
+    grid-area: tweet;
+ }
+ #contact .instagram{
+    width: 5px;
+    height: 10px;
+    grid-area: insta;
+    padding: 10px; 
+}

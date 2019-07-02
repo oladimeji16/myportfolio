@@ -1,0 +1,42 @@
+body{
+    font-family: 'inconsolata';
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+#nav{
+    position: sticky;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(75px, auto);
+    grid-template-areas: 
+    "nav . . a w c"
+}
+#nav .logo{
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-image: url(../Images/MODEV.jpg);
+    padding: 20px; 
+    grid-area: nav;
+}
+#nav .about{
+    border-radius: 20px;
+    color: yellow;
+    text-decoration: none;
+    grid-area: a;
+}
+#nav .work{
+    border-radius: 20px;
+    color: yellow;
+    text-decoration: none;
+    grid-area: w;
+}
+#nav .contact{
+    color: yellow;
+    text-decoration: none;
+    grid-area: c;
+
+}
