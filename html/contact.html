@@ -9,18 +9,30 @@
 </head>
 <body>
     <div id="nav">
-        <a href="/html/index.html" class="logo"></a>
+        <a href="/html/index.html" class="logo">ModevS</a>
         <a href="/html/about.html" class="about">About</a>
         <a href="/html/work.html" class="work">Portfolio</a>
         <a href="/html/contact.html" class="contact">Contact</a> 
      </div>
-    <div id="contact">
+
+    <main>
+        <h1>Have a message for me? </h1>
+        <h3>Send Me An Email</h3>
+        <form class="contact-form" action="../formhandler.php" method="post">
+            <input name="name" type="text" class="form-control" placeholder="Enter Your Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Enter Your Email" required><br>
+                    <textarea name="message" class="form-control" rows="4" placeholder="Enter Your Message" required></textarea><br>
+                    <input type="submit" value="Send Message" class="submit">
+
+        </form>
+    </main>
+    <!--<footer id="contact">
         <h1>CONTACT</h1>
         <p>You can follow my social media pages here: </p>
-        <a href="https://www.github.com/oladimeji16" target="_blank" class="github"><img src="../Images/githublogo.png" alt="my github page"></a>
-        <a href="https://www.linkedin.com/oladimeji16" target="_blank" class="linkedin"><img src="../images/linkedin-logo.png" alt="my linkedin page"></a>
-        <a href="https://www.twitter.com/olatohdimeji" target="_blank"class="twitter"><img src="../images/twitter-social-logotype.png" alt="my twitter page"></a>
-        <a href="https://www.instagram.com/dimes_68" target="_blank"><img src="../images/instagram-social-network-logo-of-photo-camera.png" alt="my instagram page"></a>
-    </div>
+        <a href="https://www.github.com/oladimeji16" target="_blank" class="github"></a>
+        <a href="https://www.linkedin.com/oladimeji16" target="_blank" class="linkedin"></a>
+        <a href="https://www.twitter.com/olatohdimeji" target="_blank"class="twitter"></a>
+        <a href="https://www.instagram.com/dimes_68" target="_blank"></a>
+    </footer>-->
 </body>
 </html>

@@ -4,19 +4,6 @@ body{
     margin: 5px;
     background: black;}
 #nav{
-    position: fixed;
-    padding: 10px;
-    margin: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(75px, auto);
-    grid-template-areas: 
-    "nav nav nav nav"
-    "a a a a"
-    " w w w w"
-    " c c c c"}
-
-#nav{
     position: sticky;  
     padding: 10px;
     margin: 10px;
@@ -47,7 +34,7 @@ body{
     grid-area: c;}
 #home{
     padding: 5px;
-    margin: 5px;
+    margin-top: 5px;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -108,13 +95,13 @@ i{color: yellow;}
 }
 #animate a{
     width: 100px;
-    padding: 25px 0;
+    padding: 20px;
     font-size: 20px;
     line-height: 0;
     height: 0;
-    margin: 60px auto;
-    background: skyblue;
-    color: #fff;
+    margin: 10px;
+    background: #fff;
+    color: black;
     border-radius: 30px;
     cursor: pointer;
 }

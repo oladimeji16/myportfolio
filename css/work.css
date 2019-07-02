@@ -1,42 +1,80 @@
 body{
-    font-family: 'inconsolata';
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
+    text-align: center;  
+    font-family: 'Satisfy', cursive; 
+    background-color: skyblue; 
 }
 #nav{
-    position: sticky;
-    background-color: black;
+    position: sticky;  
     padding: 10px;
     margin: 10px;
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(75px, auto);
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(20px, auto);
     grid-template-areas: 
-    "nav . . a w c"
-}
+    "nav . . . a w c"}
 #nav .logo{
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-image: url(../Images/MODEV.jpg);
-    padding: 20px; 
+    font-family: 'Satisfy', cursive;
+    padding: 5px; 
+    color: black;
     grid-area: nav;
-}
+    border-radius: 20px;
+    text-decoration: none;}
 #nav .about{
     border-radius: 20px;
-    color: yellow;
+    color: black;
     text-decoration: none;
-    grid-area: a;
-}
+    grid-area: a;}
 #nav .work{
     border-radius: 20px;
-    color: yellow;
+    color: black;
     text-decoration: none;
-    grid-area: w;
-}
+    grid-area: w;}
 #nav .contact{
-    color: yellow;
+    color: black;
     text-decoration: none;
-    grid-area: c;
+    grid-area: c;}
 
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "h1 h1 h1 h1 h1"
+    "h3 h3 h3 h3 h3"
+    "circle circle circle circle circle"
+     ;
+}
+main p{
+    color: pink;
+    font-size: 30px;
+    grid-area: h1;
+    animation: dis 5s ease-in 2 reverse;
+}
+main h3{
+    grid-area: h3;
+    color: lightgreen;
+    animation: dis 10s ease-out infinite forwards;
+}
+.circle{
+    grid-area: circle;
+    width: 100px;
+    padding: 25px 0;
+    margin: 60px auto;
+    background: lightpink;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 1s, transform 0.3s, ease infinite ;
+}
+.circle:hover{
+    background: lightgreen;
+    transform: rotate(360deg);
+
+}
+@keyframes dis{
+    
+    from{transform: translateX(0); opacity: 0;}
+    to{transform: translateY(500px); opacity: 1;}
 }
